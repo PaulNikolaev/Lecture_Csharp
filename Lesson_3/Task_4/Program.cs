@@ -2,9 +2,9 @@
 {
     for (int i = 0; i < arr.Length; i++)
     {
-        //arr[i] = i + 1;
-        Random rnd = new Random();
-        arr[i] = rnd.Next(1, 100);
+        arr[i] = i + 1;
+        //Random rnd = new Random();
+        //arr[i] = rnd.Next(1, 100);
     }
 }
 
@@ -43,5 +43,6 @@ FillArray(arr);
 PrintArray(arr);
 int sum = GetSumOfElements(arr);
 int product = GetProductOfElements(arr);
+Console.WriteLine("");
 Console.WriteLine(sum);
 Console.WriteLine(product);
